@@ -1,0 +1,113 @@
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>TransRota</title>
+      <link href="../bootstrap.min.css" rel="stylesheet">
+      <link href="../style.css" rel="stylesheet">
+      <script type="text/javascript" src="../jquery-1.10.2.min.js"></script>
+      <script type="text/javascript" src="../bootstrap.min.js"></script>
+      <script type="text/javascript" src="../maps.js"></script>
+      <script type="text/javascript" src="../js.js"></script>
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRZ5R_9jVlX9jUmsUd__71K3hzroBcIpk&libraries=places"></script>
+   </head>
+   <body style="">
+   <div class="login-page">
+      <div class="container">
+      <center><img src="logo.png" width="10%"></center>
+      <h1 style="text-align: center;color:#fff;">TransRota</h1>
+      <h4 style="text-align: center;color:#fff;">Definindo sua melhor rota !</h4>
+         <div class="row">
+            <section>
+               <div class="wizard">
+                  <div class="wizard-inner">
+                     
+                     <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                           <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="" data-original-title="Primeiro Passo">
+                           <span class="round-tab">
+                           <img src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/256/map-marker-icon.png" width="80%" style="margin-top:10%">
+                           </span>
+                           </a>
+                        </li>
+                        <li role="presentation">
+                           <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="" data-original-title="Segundo Passo">
+                           <span class="round-tab">
+                           <img src="http://www.iconninja.com/files/216/141/157/success-correct-check-valid-tick-yes-mark-icon.svg" width="80%" style="margin-top:10%">
+                           </span>
+                           </a>
+                        </li>
+                       
+                     </ul>
+                  </div>
+                  <form role="form">
+                     <div class="tab-content">
+                        <div class="tab-pane active" role="tabpanel" id="step1">
+                           <div class="step1">
+                              <div class="row">
+                                 <div class="col-md-3 col-md-offset-3">
+                                    <label for="exampleInputEmail1" style="color:#fff;">Origem</label>
+                                    <input type="text" class="form-control" id="origem" placeholder="Origem" required>
+                                 </div>
+                                 <div class="col-md-3">
+                                    <label for="exampleInputEmail1" style="color:#fff;">Destino</label>
+                                    
+									<select class="form-control" id="destino">
+									<option>Porto de Santos, SP</option>
+									<option>Porto de Paranaguá, PR</option>
+									</select>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <br>
+                           <ul class="list-inline">
+                              <center><li><button type="button" class="btn btn-primary next-step">Continuar</button></li></center>
+                           </ul>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="step2">
+                           <div class="step2">
+                              
+                                 <div class="row">
+                                 <h3 id="txt_de" style="text-align: center;color:#fff;">De: </h3>
+                                 <h3 id="txt_para" style="text-align: center;color:#fff;">Para: </h3>
+                                 <h3 id="txt_distancia" style="text-align: center;color:#fff;">Distancia: </h3>
+                                 <h3 id="txt_tempo" style="text-align: center;color:#fff;">Tempo: </h3>
+								<div id="map"></div>
+                                
+								 <!-- Replace the value of the key parameter with your own API key. -->
+								<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRZ5R_9jVlX9jUmsUd__71K3hzroBcIpk">
+								</script>
+                                 
+                              </div>
+                           </div>
+                           <ul class="list-inline pull-right">
+                              <li><button type="button" class="btn btn-default prev-step">Anterior</button></li>
+                              
+                           </ul>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="step3">
+                           <div class="step33">
+                            
+                           </div>
+                           <ul class="list-inline pull-right">
+                              <li><button type="button" class="btn btn-default prev-step">Anterior</button></li>
+                              <li><button type="button" class="btn btn-default next-step">Próximo</button></li>
+                              <li><button type="button" class="btn btn-primary btn-info-full next-step">Continuar</button></li>
+                           </ul>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="complete">
+                           <div class="step44">
+                              <h5>Finalizado</h5>
+                           </div>
+                        </div>
+                        <div class="clearfix"></div>
+                     </div>
+                  </form>
+               </div>
+            </section>
+         </div>
+      </div>
+      </div>
+   </body>
+</html>
