@@ -5,6 +5,7 @@
       <title>TransRota</title>
       <link href="../bootstrap.min.css" rel="stylesheet">
       <link href="../style.css" rel="stylesheet">
+      <link rel="icon" href="../logo.png">
       <script type="text/javascript" src="../jquery-1.10.2.min.js"></script>
       <script type="text/javascript" src="../bootstrap.min.js"></script>
       <script type="text/javascript" src="../maps.js"></script>
@@ -16,7 +17,7 @@
       <div class="container">
       <center><img src="logo.png" width="10%"></center>
       <h1 style="text-align: center;color:#fff;">TransRota</h1>
-      <h4 style="text-align: center;color:#fff;">Definindo sua melhor rota !</h4>
+      <h4 style="text-align: center;color:#fff;">Definindo sua melhor rota!</h4>
          <div class="row">
             <section>
                <div class="wizard">
@@ -26,7 +27,7 @@
                         <li role="presentation" class="active">
                            <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="" data-original-title="Primeiro Passo">
                            <span class="round-tab">
-                           <img src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/256/map-marker-icon.png" width="80%" style="margin-top:10%">
+                           <img src="https://cdn2.iconfinder.com/data/icons/color-svg-vector-icons-2/512/map_marker_base-128.png" width="80%" style="margin-top:10%">
                            </span>
                            </a>
                         </li>
@@ -44,8 +45,8 @@
                      <div class="tab-content">
                         <div class="tab-pane active" role="tabpanel" id="step1">
                            <div class="step1">
-                              <div class="row">
-                                 <div class="col-md-3 col-md-offset-3">
+                              <div class="row ori-des">
+                                 <div class="col-md-3 col-md-offset-2">
                                     <label for="exampleInputEmail1" style="color:#fff;">Origem</label>
                                     <input type="text" class="form-control" id="origem" placeholder="Origem" required>
                                  </div>
@@ -56,6 +57,10 @@
 									<option>Porto de Santos, SP</option>
 									<option>Porto de Paranaguá, PR</option>
 									</select>
+                                 </div>
+                                 <div class="col-md-2">
+                                    <label for="exampleInputEmail1" style="color:#fff;">Km/Litro</label>
+                                    <input type="text" class="form-control" id="km_litro" placeholder="Km/Litro" required>
                                  </div>
                               </div>
                            </div>
@@ -68,11 +73,12 @@
                         <div class="tab-pane" role="tabpanel" id="step2">
                            <div class="step2">
                               
-                                 <div class="row">
-                                 <h3 id="txt_de" style="text-align: center;color:#fff;">De: </h3>
-                                 <h3 id="txt_para" style="text-align: center;color:#fff;">Para: </h3>
-                                 <h3 id="txt_distancia" style="text-align: center;color:#fff;">Distancia: </h3>
-                                 <h3 id="txt_tempo" style="text-align: center;color:#fff;">Tempo: </h3>
+                                 <div class="row bg">
+                                 <h3 id="txt_de" style="text-align: center;color:#fff;"></h3>
+                                 <h3 id="txt_para" style="text-align: center;color:#fff;"></h3>
+                                 <h3 id="txt_distancia" style="text-align: center;color:#fff;"></h3>
+                                 <h3 id="txt_tempo" style="text-align: center;color:#fff;"></h3>
+                                 <h3 id="txt_subtotal" style="text-align: center;color:#fff;"></h3>
 								<div id="map"></div>
                                 
 								 <!-- Replace the value of the key parameter with your own API key. -->
@@ -81,8 +87,10 @@
                                  
                               </div>
                            </div>
-                           <ul class="list-inline pull-right">
-                              <li><button type="button" class="btn btn-default prev-step">Anterior</button></li>
+                           <br>
+                           <br>
+                           <ul class="list-inline">
+                              <center><li><button type="button" class="btn btn-default prev-step">Voltar</button></li></center>
                               
                            </ul>
                         </div>
@@ -91,7 +99,7 @@
                             
                            </div>
                            <ul class="list-inline pull-right">
-                              <li><button type="button" class="btn btn-default prev-step">Anterior</button></li>
+                              <center><li><button type="button" class="btn btn-default prev-step">Voltar</button></li></center>
                               <li><button type="button" class="btn btn-default next-step">Próximo</button></li>
                               <li><button type="button" class="btn btn-primary btn-info-full next-step">Continuar</button></li>
                            </ul>
@@ -106,8 +114,12 @@
                   </form>
                </div>
             </section>
-         </div>
+         </div>          
       </div>
-      </div>
+      <footer class=rodape>
+      <a href="./transrota.apk">Download Aplicativo (Android)</a> | 
+                   Copyright © TransRota 2017. Todos os direitos reservados.
+                   </footer>
+      </div> 
    </body>
 </html>
