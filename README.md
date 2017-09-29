@@ -1,5 +1,6 @@
 # Sobre o Transrota
 Projeto Integrador - Faculdade Arthur Thomas - 1 Semestre (2017/2)
+[Download do Aplicativo](http://www.transrota.paralink.com.br/app/transrota.apk)
 
 [Link de Teste](http://www.transrota.paralink.com.br)
 
