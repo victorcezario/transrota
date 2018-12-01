@@ -1,8 +1,14 @@
 # About TransRota
 Integrator Project - Positivo University
+- The transrota is an application to calculate transport routes and calculate the value of the fuel that will be spent in a certain route
 [Download the Application] (http://www.transrota.paralink.com.br/app/transrota.apk)
 
 [Test Link] (http://www.transrota.paralink.com.br)
+# Language
+PHP + Javascript
+
+# Integrations
+Google Maps
 
 # Responsible Students
 
