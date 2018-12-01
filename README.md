@@ -1,17 +1,17 @@
-# Sobre o Transrota
-Projeto Integrador - Faculdade Arthur Thomas - 1 Semestre (2017/2)
-[Download do Aplicativo](http://www.transrota.paralink.com.br/app/transrota.apk)
+# About TransRota
+Integrator Project - Positivo University
+[Download the Application] (http://www.transrota.paralink.com.br/app/transrota.apk)
 
-[Link de Teste](http://www.transrota.paralink.com.br)
+[Test Link] (http://www.transrota.paralink.com.br)
 
-# Alunos Responsáveis
+# Responsible Students
 
-[Andrey Paro](https://github.com/paroandrey)
+[Andrey Paro] (https://github.com/paroandrey)
 
-[Jhonny Ulisses](https://github.com/jhonnyulisses)
+[Jhonny Ulisses] (https://github.com/jhonnyulisses)
 
-[Paulo Dias](https://github.com/pecedias)
+[Paulo Dias] (https://github.com/pecedias)
 
-[Saulo Nunes](https://github.com/SauloNunes)
+[Saulo Nunes] (https://github.com/SauloNunes)
 
-[Victor Cezario](https://github.com/victorcezario)
+[Victor Cezario] (https://github.com/victorcezario)
